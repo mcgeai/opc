@@ -493,16 +493,9 @@
                         <h4 class="text-xl font-bold text-white mb-2">mcgeAI-opc 独立工作室</h4>
                         <p class="text-xs text-accent-500 mb-6 font-medium tracking-wide">资深云计算架构师 | 关键业务基础设施专家</p>
                         
-                        <!-- 二维码占位框 -->
-                        <div class="w-48 h-48 mx-auto bg-white p-2 rounded-lg mb-6 shadow-inner relative flex items-center justify-center group overflow-hidden">
-                            <!-- 如果有真实的二维码图片，替换这里的 img src -->
-                            <div class="absolute inset-0 border-4 border-dashed border-slate-300 rounded-lg m-2"></div>
-                            <div class="text-slate-400 text-sm z-10 flex flex-col items-center">
-                                <i class="fa-solid fa-image text-3xl mb-2 text-slate-300"></i>
-                                <span>  
- <td> <img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/384bf649-b8a3-4c66-a68a-1829acbce24d" />  </td>
-                                </span>
-                            </div>
+                        <!-- 二维码展示区 -->
+                        <div class="w-64 h-64 mx-auto bg-white p-2 rounded-lg mb-6 shadow-inner relative flex items-center justify-center overflow-hidden">
+                            <img width="409" height="401" alt="image" src="https://github.com/user-attachments/assets/40937723-f381-4c18-8ec9-826b301e75b8" />
                         </div>
                         
                         <p class="text-sm text-slate-400">
@@ -518,8 +511,18 @@
                 </div>
             </div>
             
-            <div class="mt-20 pt-8 border-t border-white/5 text-center text-sm text-slate-500 flex flex-col md:flex-row justify-between items-center">
+            <div class="mt-20 pt-8 border-t border-white/5 text-center text-sm text-slate-500 flex flex-col md:flex-row justify-between items-center gap-4">
                 <p>&copy; <script>document.write(new Date().getFullYear())</script> mcgeAI-opc. All rights reserved.</p>
+                
+                <!-- 页面访问统计 (UI 预留区) -->
+                <div class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs text-slate-400 group hover:border-accent-500/50 transition-colors">
+                    <i class="fa-solid fa-chart-line text-accent-500"></i>
+                    <span>平台累计访问:</span>
+                    <!-- 预留动态数值替换处。若使用下方的"不蒜子"统计，id 需保持为 busuanzi_value_site_pv -->
+                    <span id="busuanzi_value_site_pv" class="font-mono text-white font-medium tracking-wider animate-pulse">--</span> 
+                    <span>次</span>
+                </div>
+
                 <p class="mt-2 md:mt-0">Designed for Professional Tech Consulting.</p>
             </div>
         </div>
@@ -697,5 +700,13 @@
         init();
         animate();
     </script>
+
+    <!-- 
+      预留的静态网站访问统计工具 (不蒜子 - 适合 GitHub Pages)
+      💡 使用指南：如果您想直接使用它，只需将下方 script 的 HTML 注释符去掉即可，
+      它会自动在上方 id 为 "busuanzi_value_site_pv" 的 span 标签中填入访问量。
+    -->
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 </body>
 </html>
